@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7fafb;
+}
+ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  nav {
+    width: min(100%, 1442px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li a {
+    margin: 30px;
+    color: #1A8FE3;
+    font-size: 15px;
+    font-weight:600;
+  }
+  
+  .logo img {
+    margin-top: 10px;;
+    width: 200px;
+    height: 100%;
+  }
+  .contanier{
+    max-width: min(90%,700px);
+    margin-top: 15px;
+    height:400px;
+    margin-left: 95px;
+    /* margin-right: auto; */
+    background:linear-gradient(0deg, rgba(23, 20, 22, 0.54), rgba(0, 0, 0, 0.69)), url('../img/kid.jpeg');
+    background-size: cover;
+}
+@media only screen and (max-width: 600px){
+  .contanier{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  nav{
+    width:100%;
+  }
+  .logo img{
+    opacity: 0;
+  }
+  nav ul li {
+    position: relative;
+    right: 210px;
+  }
+  nav ul li a{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 758px){
+  .contanier{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  nav{
+    width: 100%;
+  }
+  .logo img{
+    opacity: 0;
+  }
+  nav ul li {
+    position: relative;
+    right: 210px;
+  }
+  nav ul li a{
+    font-size: 13px;
+  }
+}
+.contanier h1{
+  color: #fff;
+    text-align: center;
+    align-items: center;
+    padding-top:100px;
+}
+
+.contanier-questions{
+    width: min(90%,1255px);
+    height:300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contanier-questions h1{
+    padding-top:20px;
+}
+.questions{
+    float:left;
+}
+.questions h1{
+    font-size:19px;
+    color: #1A8FE3;
+}
+.btn{
+    text-decoration: none;
+    background-color: #1a8fe3b4;
+    color:#fff;
+    border-radius: 10px;
+    font-size:16.5px;
+    font-weight: 500;
+    padding:5px 10px;
+    width:220px;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* left:20px; */
+  }
+.btn p{
+    opacity:0;
+    font-size: 20px;
+}
+.btn h3{
+  font-size:16px;
+  font-weight:400;
+}
+.btn:hover p{
+    opacity:1 ;
+    transition: 1s ease;
+}
+.btn:hover h3{
+    opacity:0;
+    transition: 1s ease;
+}
